@@ -1,0 +1,62 @@
+.TH _PRINTF 3 "2024-03-28" "Version 1.0" 
+
+.SH NAME
+_printf \- format and print data
+
+.SH SYNOPSIS
+.B #include <stdio.h>
+.br
+.B #include <stdarg.h>
+.br
+.B int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+The \fB_printf\fP function formats and prints data to the standard output stream (stdout) according to the format specifier provided in the format string.
+
+.SH RETURN VALUE
+The \fB_printf\fP function returns the number of characters printed (excluding the null byte used to end output to strings). If an error occurs, it returns a negative value.
+
+.SH FORMAT SPECIFIERS
+The format string can contain format specifiers, which are special sequences that specify how to format and print data. The following format specifiers are supported:
+
+.TP
+\fB%c\fP
+Prints a single character.
+
+.TP
+\fB%s\fP
+Prints a string.
+
+.TP
+\fB%%\fP
+Prints a percent sign.
+
+.SH EXAMPLES
+The following example demonstrates the usage of the \fB_printf\fP function:
+
+.B #include <stdio.h>
+.br
+.B #include "main.h"
+.br
+.B int main(void)
+.br
+.B {
+.br
+.B     int count;
+.br
+.B     count = _printf("Hello, %s!\n", "world");
+.br
+.B     printf("Number of characters printed: %d\n", count);
+.br
+.B     return (0);
+.br
+.B }
+
+.SH SEE ALSO
+.BR printf (3)
+
+.SH AUTHOR
+\fBAysu and Nihad\fR" > _printf.1
+mv _printf.1 /usr/local/man/man1/
+gzip -f /usr/local/man/man1/_printf.1
+man _printf
