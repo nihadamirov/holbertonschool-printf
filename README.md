@@ -6,28 +6,32 @@ This repository contains an implementation of the `_printf` function, which form
 
 ```c
 int _printf(const char *format, ...);
+```
 
-Usage
+## Usage
 
 To use the _printf function in your program, include the header file main.h:
 
+```c
 #include "main.h"
+```
 
 Then, call the _printf function in your code with the desired format specifier and arguments. For example:
 
+```c
 int main(void) {
     _printf("Hello, %s!\n", "world");
     return (0);
 }
-
+```
 
 ## Compilation and Execution
 Compile your source code, linking it with the implementation files (_printf.c, _putchar.c, get_fun.c, print_functions.c, main.h).
-
+```
 gcc -o your_program main.c _printf.c _putchar.c get_fun.c print_functions.c
 
 ./your_program
-
+```
 
 ## Format Specifiers
 %c: Prints a single character.
@@ -39,6 +43,7 @@ The _printf function returns the number of characters printed (excluding the nul
 
 ## Examples
 
+```c
 #include <stdio.h>
 #include "main.h"
 
@@ -48,7 +53,7 @@ int main(void) {
     printf("Number of characters printed: %d\n", count);
     return (0);
 }
-
+```
 ## Flowchart
 
 Below is a textual representation of the flowchart illustrating the operation of the `_printf` function:
