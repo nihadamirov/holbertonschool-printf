@@ -59,7 +59,7 @@ int main(void) {
 Below is a textual representation of the flowchart illustrating the operation of the `_printf` function:
 
 <p align="center">
-  <img src="C:\Users\nihad\Downloads\flowchart-code.png" alt="_printf-flowchart" />
+  <img src="C:\Users\nihad\Downloads\_printf-flowchart.png" alt="_printf-flowchart" />
 </p>
 
 
