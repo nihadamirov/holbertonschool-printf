@@ -6,7 +6,7 @@ _printf \- format and print data
 .SH SYNOPSIS
 .B #include <stdio.h>
 .br
-.B #include <stdarg.h>
+.B #include "main.h"
 .br
 .B int _printf(const char *format, ...);
 
@@ -56,7 +56,5 @@ The following example demonstrates the usage of the \fB_printf\fP function:
 .BR printf (3)
 
 .SH AUTHOR
-\fBAysu and Nihad\fR" > _printf.1
-mv _printf.1 /usr/local/man/man1/
-gzip -f /usr/local/man/man1/_printf.1
-man _printf
+\fBAysu and Nihad\fR
+
