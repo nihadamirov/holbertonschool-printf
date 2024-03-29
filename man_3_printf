@@ -56,5 +56,5 @@ The following example demonstrates the usage of the \fB_printf\fP function:
 .BR printf (3)
 
 .SH AUTHOR
-\fBAysu and Nihad\fR
-
+-\fBAysu and Nihad\fR
+-

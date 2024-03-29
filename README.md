@@ -58,47 +58,12 @@ int main(void) {
 
 Below is a textual representation of the flowchart illustrating the operation of the `_printf` function:
 
-   Start
-     |
-     V
-   Read format string
-     |
-     V
-   Initialize count to 0
-     |
-     V
-   Loop through each character in format string
-     |
-     V
-   If current character is '%' then
-   |
-   V
-   If next character is '%' then
-   |
-   |--> Print '%' to stdout
-   |--> Increment count by 1
-   |
-   |--> Else if next character is valid specifier then
-   |     |
-   |     V
-   |--> Call corresponding print function
-   |--> Increment count by the number of characters printed
-   |
-   |--> Else
-   |     |
-   |     V
-   |--> Print current character to stdout
-   |--> Increment count by 1
-   |
-   V
-   End Loop
-     |
-     V
-   Return count
-     |
-     V
-   End
+<p align="center">
+  <img src="C:\Users\nihad\Downloads\flowchart-code.png" alt="_printf-flowchart" />
+</p>
 
 
-Author
-Aysu Sadikhova and Nihad Amirov
+## Authors
+
+- **Aysu Sadikhova** - https://github.com/aysucuk
+- **Nihad Amirov** - https://github.com/nihadamirov
