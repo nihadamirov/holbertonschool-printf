@@ -92,3 +92,25 @@ int print_int(va_list x)
 		return (i + 1);
 	return (i);
 }
+int print_bin(va_list n)
+{
+	unsigned int x = va_arg(n, int);
+	int res, i, j, count = 0;
+	char *ptr;
+	unsigned int y = x;
+
+	if (x < 1)
+	{
+		_putchar('0' + 0);
+		return (1);
+	}
+	for (j = 0; j > 0; j++)
+	{
+		y = y / 2;
+	}
+	ptr = malloc(sizeof(char) * j);
+
+	//TODO
+
+
+}
