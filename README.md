@@ -21,7 +21,7 @@ int main(void) {
 }
 
 
-Compilation and Execution
+## Compilation and Execution
 Compile your source code, linking it with the implementation files (_printf.c, _putchar.c, get_fun.c, print_functions.c, main.h).
 
 gcc -o your_program main.c _printf.c _putchar.c get_fun.c print_functions.c
@@ -29,15 +29,15 @@ gcc -o your_program main.c _printf.c _putchar.c get_fun.c print_functions.c
 ./your_program
 
 
-Format Specifiers
+## Format Specifiers
 %c: Prints a single character.
 %s: Prints a string.
 %%: Prints a percent sign.
 
-Return Value
+## Return Value
 The _printf function returns the number of characters printed (excluding the null byte used to terminate output to strings). If an error occurs, it returns a negative value.
 
-Examples
+## Examples
 
 #include <stdio.h>
 #include "main.h"
