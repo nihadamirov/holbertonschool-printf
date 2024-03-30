@@ -109,8 +109,19 @@ int print_bin(va_list n)
 		y = y / 2;
 	}
 	ptr = malloc(sizeof(char) * j);
-
-	//TODO
-
-
+	if (ptr == NULL)
+		return (-1);
+	for (i = 0; x > 0; i++)
+	{
+		res = x % 2;
+		x = x / 2;
+		ptr[i] = res;
+		count++;
+	}
+	for (; i > 0; i--)
+	{
+		_putchar('0' + ptr[i - 1]);
+	}
+	free(ptr);
+	return (count);
 }
