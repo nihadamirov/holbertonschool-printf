@@ -25,5 +25,6 @@ int _putchar(char c);
 int print_perc(void);
 int print_rev(va_list x);
 int (*get_print(char type))(va_list);
+int print_bin(va_list n);
 
 #endif
